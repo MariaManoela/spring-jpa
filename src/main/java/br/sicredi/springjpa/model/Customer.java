@@ -1,11 +1,14 @@
 package br.sicredi.springjpa.model;
 
+import lombok.Getter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+@Getter
 public class Customer {
         @Id
         @GeneratedValue(strategy= GenerationType.AUTO)
@@ -23,19 +26,6 @@ public class Customer {
         @Override
         public String toString() {
             return String.format(
-                    "Customer[id=%d, firstName='%s', lastName='%s']",
-                    id, firstName, lastName);
-        }
-
-        public Long getId() {
-            return id;
-        }
-
-        public String getFirstName() {
-            return firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
+                    "Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
         }
 }
