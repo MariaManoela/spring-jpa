@@ -1,4 +1,4 @@
-package br.sicredi.springjpa;
+package br.sicredi.springjpa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
 package br.sicredi.springjpa.repository;
 
-import br.sicredi.springjpa.Customer;
+import br.sicredi.springjpa.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
