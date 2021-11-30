@@ -9,6 +9,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.Optional;
+
 @SpringBootApplication
 public class SpringjpaApplication {
 	private static final Logger log = LoggerFactory.getLogger(SpringjpaApplication.class);
@@ -36,7 +38,7 @@ public class SpringjpaApplication {
 			log.info("");
 
 			// fetch an individual customer by ID
-			Customer customer = repository.findById(1L);
+			Optional<Customer> customer = repository.findById(1L);
 			log.info("Customer found with findById(1L):");
 			log.info("--------------------------------");
 			log.info(customer.toString());
