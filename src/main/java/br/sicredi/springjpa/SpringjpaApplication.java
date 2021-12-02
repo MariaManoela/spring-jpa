@@ -9,8 +9,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Optional;
-
 @SpringBootApplication
 public class SpringjpaApplication {
 	private static final Logger log = LoggerFactory.getLogger(SpringjpaApplication.class);
@@ -57,4 +55,3 @@ public class SpringjpaApplication {
 		};
 	}
 }
-
