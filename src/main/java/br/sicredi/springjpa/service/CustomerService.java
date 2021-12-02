@@ -17,12 +17,12 @@ public class CustomerService {
         return (List<Customer>) repository.findAll();
     }
 
-    public Optional<Customer> findById(Long id) {
+    public Optional findById(Long id) {
         return repository.findById(id);
     }
 
     public Customer findByLastName(String lastName) {
-        return (Customer) repository.findByLastName(lastName);
+        return repository.findByLastName(lastName);
     }
 
     public void save(Customer customer) {

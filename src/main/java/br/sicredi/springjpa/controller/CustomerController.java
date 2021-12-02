@@ -29,12 +29,12 @@ public class CustomerController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Customer> findById(@PathVariable("id") Long id) {
+    public Optional findById(@PathVariable("id") Long id) {
         return service.findById(id);
     }
 
     @GetMapping("/lastName")
-    public List<Customer> findByLastName(@RequestParam String lastName) {
-        return (List<Customer>) service.findByLastName(lastName);
+    public Customer findByLastName(@RequestParam String lastName) {
+        return service.findByLastName(lastName);
     }
 }
